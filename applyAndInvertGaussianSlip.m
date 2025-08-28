@@ -2,7 +2,7 @@ function [out, g, velg] = applyAndInvertGaussianSlip(p_in,u_in,p,u,xyz,A,beta,no
     % apply a Gaussian slip distribution (purely dip slip) to one mesh, 
       % calculate displacements and invert those displacements onto a 
       % second mesh
-    % INPUTS 
+%%%%% --------------------------- INPUTS --------------------------- %%%%%
     % p_in: the mesh structure that the slip distribution is applied to
     % u_in: the partials relating slip on p_in to surface displacements
     % p: the mesh structure that the displacements calculated using the
@@ -15,7 +15,8 @@ function [out, g, velg] = applyAndInvertGaussianSlip(p_in,u_in,p,u,xyz,A,beta,no
     % noise: a matrix of random noise to be added to the displacements
       % that are inverted; 3*number of disp. locations by number of desired 
       % iterations to run
-    % OUTPUT 
+      
+%%%%% --------------------------- OUTPUTS --------------------------- %%%%%
     % out: a matrix containing the output slip distribution; 2*p.nEl by
       % number of iterations; (1:2:end,i)=strike slip; (2:2:end,i)=dip slip
     % g: an array containing the input dip-slip distribution applied to
@@ -23,6 +24,7 @@ function [out, g, velg] = applyAndInvertGaussianSlip(p_in,u_in,p,u,xyz,A,beta,no
     % velg: an array containing the displacements calculated using u_in; 
       % 3*number of disp. locations; 1:2:end=strike slip; 2:2:end=dip slip
       
+%%%%% ---------------------------- CODE ---------------------------- %%%%%
 % remove the tensile slip component if exists in u
 if size(u,2)/p.nEl == 3
     clear('keep')
