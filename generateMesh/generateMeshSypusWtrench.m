@@ -78,6 +78,17 @@ og_cont = og_cont(og_cont(:,3)>-40.1,:);
 % down sample to get median latitude difference between points ~0.05
 cont = og_cont(1:20:end,:);
 
+% remove the 5 km contour
+cont = cont(cont(:,3)~=-5,:);
+
+% add the trench contour
+if size(trench,2) == 2
+    trench = [trench(:,1), trench(:,2), ones(size(trench,1),1)*-3.5];
+    trench(end,1) = 235;
+    trench(end-1,1) = 235;
+end
+cont = [trench(6:end,:);cont];
+
 % generate a Gmsh countour file
 contour2geo(cont(:,1), cont(:,2), cont(:,3), 20, geoFile, 4.12)
 

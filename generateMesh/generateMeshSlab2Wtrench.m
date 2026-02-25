@@ -88,9 +88,11 @@ for i = 1:length(s)
 end
 
 % add the trench contour
-trench = [trench(:,1), trench(:,2), ones(size(trench,1),1)*-3.5];
-trench(end,1) = 235;
-trench(end-1,1) = 235;
+if size(trench,2) == 2
+    trench = [trench(:,1), trench(:,2), ones(size(trench,1),1)*-3.5];
+    trench(end,1) = 235;
+    trench(end-1,1) = 235;
+end
 cont = [cont;trench];
 
 
