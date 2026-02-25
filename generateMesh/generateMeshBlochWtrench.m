@@ -5,6 +5,9 @@ function [p] = generateMeshBloch(gmshpath, geoFile,ptFile,trenchFile)
     % gmshpath: path to Gmsh application in system
     % geoFile: file name for the new *.geo and *.msh files t0 be written
     % ptFile: file name for the point cloud (must be *.nc)
+    % trenchFile: file name for trench trace coordinates, an m-by-2 matrix
+      % with long in column 1 and latitude in column 2 (must be ordered
+      % north to south)
 
 %%%%% --------------------------- OUTPUTS --------------------------- %%%%%
     % geoFile.geo: Gmsh geo file 

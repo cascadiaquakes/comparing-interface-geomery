@@ -8,6 +8,9 @@ function [p] = generateMeshMcCroryWtrench(gmshpath, geoFile,contFile,supContFile
       % delimited txt)
     % supContFile: file name for the smoothed contours (must be space/tab 
       % delimited txt)
+    % trenchFile: file name for trench trace coordinates, an m-by-2 matrix
+      % with long in column 1 and latitude in column 2 (must be ordered
+      % north to south)
       
 %%%%% --------------------------- OUTPUTS --------------------------- %%%%%
     % geoFile.geo: Gmsh geo file 
