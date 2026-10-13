@@ -72,7 +72,7 @@ Sypus, M., & Wang, K. (2024). Improved Cascadia Earthquake Source Models for Tsu
 
 - Maintained by [@helston](https://github.com/helston)
 
-For bugs or questions, please [open an issue](https://github.com/cascadiaquakes/comparing-interface-geomery/issues).
+For bugs or questions, please [open an issue](https://github.com/cascadiaquakes/comparing-interface-geometry/issues).
 
 ---
 
