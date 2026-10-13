@@ -1,4 +1,7 @@
-# comparing-interface-geomery
+# Comparing Cascadia Subduction Interface Geometries
+
+
+
 This repository contains code and necessary files to generate Cascadia Subduction Zone interface geometries discretized into triangular elements based on depth contours or point clouds presented by four studies: 1) McCrory et al. (2012), 2) Hayes et al. (2018), 3) Sypus & Wang (2024), and 4) Bloch et al. (2023). In addition, there is code and input files to execute forward models with uniform or a Gaussian distribution of slip applied to subduction interface geometries, inversions of the latter, block models, and analysis of the results.
 
 Codes are compatible with MATLAB and GNU Octave.
@@ -6,6 +9,10 @@ Codes are compatible with MATLAB and GNU Octave.
 Dependent on:
 - Gmsh v4.12.2 (Geuzaine & Remacle, 2009)
 - tridisl (Loveless, 2021)
+
+---
+
+## Contents
 
 ### applyUniformSlip
 Apply uniform dip slip to an isolated subduction interface and calculate the resulting surface displacements.
@@ -58,3 +65,28 @@ McCrory, P. A., Blair, J. L., Waldhauser, F., & Oppenheimer, D. H. (2012). Juan 
 Saux, J. P., Molitors Bergman, E. G., Evans, E. L., & Loveless, J. P. (2022). The Role of Slow Slip Events in the Cascadia Subduction Zone Earthquake Cycle. Journal of Geophysical Research: Solid Earth, 127(2), e2021JB022425. https://doi.org/10.1029/2021JB022425
 
 Sypus, M., & Wang, K. (2024). Improved Cascadia Earthquake Source Models for Tsunami Hazard Assessment (No. OPEN-FILE REPORT O-24-11). DOGAMI. https://www.oregon.gov/dogami/pubs/pages/ofr/p-o-24-11.aspx
+
+---
+
+## Contacts
+
+- Maintained by [@helston](https://github.com/helston)
+
+For bugs or questions, please [open an issue](https://github.com/cascadiaquakes/comparing-interface-geomery/issues).
+
+---
+
+## Acknowledgments
+
+<table>
+  <tr>
+    <td align="center" valign="middle">
+      <img src="https://raw.githubusercontent.com/cascadiaquakes/.github/main/assets/crescent-circle.png" alt="CRESCENT Logo" width="150" />
+    </td>
+    <td align="center" valign="middle">
+      <img src="https://raw.githubusercontent.com/cascadiaquakes/.github/main/assets/nsf-logo.png" alt="NSF Logo" width="450" />
+    </td>
+  </tr>
+</table>
+
+This project is supported by the National Science Foundation through the Cascadia Region Earthquake Science Center (CRESCENT), Cooperative Agreement EAR-2225286.
